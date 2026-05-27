@@ -1,0 +1,162 @@
+[
+	{
+		"name": "GMO CDI Taprica App",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/CDI/taprica-app/0_source-taprica-app",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "GMO CDI Taprica Server",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/CDI/taprica-server/0_source-taprica-server",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "GMO CDI CPAP",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/CDI/cpap/0_source_cpap",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "GMO Waiwai",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/waiwai/0_source-waiwai",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "GMO Tenbin Metis Server",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/METIS/0_src_metis-server",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "GMO Tenbin Sophia Server",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/SOPHIA/0_src_sophia-server",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "GMO Tenbin Metis Client",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/METIS/0_src_metis-client",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "GMO Tenbin Sophia Client",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/SOPHIA/0_src_sophia-client",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "GMO Tenbin Metis Local Env",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/METIS/0_src_local-env-metis",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "GMO Tenbin Sophia Local Env",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/SOPHIA/0_src_local-env-sophia",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "GMO Tenbin Sophia admin client",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/SOPHIA/0_src_sophia-admin-client",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "GMO Tenbin Metis admin client",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/METIS/0_src_metis-admin-client",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "NextJS Base",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/QUYEN/0_NEXTJS/next-base",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "NodeJS Base",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/QUYEN/0_NODEJS/node-base",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "RN base",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/QUYEN/0_REACT_NATIVE/base-react-native",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "NestJS Base",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/QUYEN/0_NESTJS/nest-base",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "GMO Shinhan",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/shinhan/0_src_shinhan",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "GMO Tenbin Lambda",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/0_src_lambda",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "GMO Tenbin BFF",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/BFF/0_src-bff",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	},
+	{
+		"name": "GMO Tenbin Common",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/0_src-common",
+		"paths": [],
+		"tags": [],
+		"enabled": true,
+		"profile": ""
+	}
+]
