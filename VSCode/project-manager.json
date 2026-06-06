@@ -1,7 +1,7 @@
 [
 	{
 		"name": "GMO CDI Taprica App",
-		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/CDI/taprica-app/0_source-taprica-app",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/CDI/taprica-app/0_src_taprica-app",
 		"paths": [],
 		"tags": [],
 		"enabled": true,
@@ -9,7 +9,7 @@
 	},
 	{
 		"name": "GMO CDI Taprica Server",
-		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/CDI/taprica-server/0_source-taprica-server",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/CDI/taprica-server/0_src_taprica-server",
 		"paths": [],
 		"tags": [],
 		"enabled": true,
@@ -17,7 +17,7 @@
 	},
 	{
 		"name": "GMO CDI CPAP",
-		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/CDI/cpap/0_source_cpap",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/CDI/cpap/0_src_cpap",
 		"paths": [],
 		"tags": [],
 		"enabled": true,
@@ -25,7 +25,7 @@
 	},
 	{
 		"name": "GMO Waiwai",
-		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/waiwai/0_source-waiwai",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/waiwai/0_src_waiwai",
 		"paths": [],
 		"tags": [],
 		"enabled": true,
@@ -96,7 +96,7 @@
 		"profile": ""
 	},
 	{
-		"name": "NextJS Base",
+		"name": "Base NextJS",
 		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/QUYEN/0_NEXTJS/next-base",
 		"paths": [],
 		"tags": [],
@@ -104,7 +104,7 @@
 		"profile": ""
 	},
 	{
-		"name": "NodeJS Base",
+		"name": "Base NodeJS",
 		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/QUYEN/0_NODEJS/node-base",
 		"paths": [],
 		"tags": [],
@@ -112,7 +112,7 @@
 		"profile": ""
 	},
 	{
-		"name": "RN base",
+		"name": "Base React Native",
 		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/QUYEN/0_REACT_NATIVE/base-react-native",
 		"paths": [],
 		"tags": [],
@@ -120,7 +120,7 @@
 		"profile": ""
 	},
 	{
-		"name": "NestJS Base",
+		"name": "Base NestJS",
 		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/QUYEN/0_NESTJS/nest-base",
 		"paths": [],
 		"tags": [],
@@ -145,7 +145,7 @@
 	},
 	{
 		"name": "GMO Tenbin BFF",
-		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/BFF/0_src-bff",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/BFF/0_src_bff",
 		"paths": [],
 		"tags": [],
 		"enabled": true,
@@ -153,7 +153,7 @@
 	},
 	{
 		"name": "GMO Tenbin Common",
-		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/0_src-common",
+		"rootPath": "/Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/0_src_common",
 		"paths": [],
 		"tags": [],
 		"enabled": true,

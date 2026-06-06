@@ -38,6 +38,7 @@ eval "$(rbenv init -)"
 # -----------------------------------------------------------------------------
 alias zprofile="source ~/.zprofile"
 alias cat-zprofile="cat ~/.zprofile"
+alias clean-mac="$HOME/quyen-scripts/cleanup.sh"
 
 # -----------------------------------------------------------------------------
 # Java version (java8 / java11 / java17; lựa chọn lưu cho tab mới)
@@ -143,13 +144,13 @@ alias rn-clean-all="
 alias npm-i-legacy="npm install --legacy-peer-deps"
 
 # Clear dev caches (Xcode, Android, Node, etc.)
-export CACHE_PATH="/Users/quyenht/Library/Caches"
-export LOG_PATH="/Users/quyenht/Library/Logs"
-export XCODE_BUILD_PATH="/Users/quyenht/Library/Developer/Xcode/DerivedData"
-export XCODE_ARCHIVE_PATH="/Users/quyenht/Library/Developer/Xcode/Archives"
-export XCODE_BUILD_FILE_PATH="/Users/quyenht/Desktop/WORKSPACE/Build files"
-export ANDROID_BUILD_CACHE_PATH="/Users/quyenht/.android/cache"
-export ANDROID_GRADLE_CACHE_PATH="/Users/quyenht/.gradle"
+export CACHE_PATH="$HOME/Library/Caches"
+export LOG_PATH="$HOME/Library/Logs"
+export XCODE_BUILD_PATH="$HOME/Library/Developer/Xcode/DerivedData"
+export XCODE_ARCHIVE_PATH="$HOME/Library/Developer/Xcode/Archives"
+export XCODE_BUILD_FILE_PATH="$HOME/Desktop/WORKSPACE/Build files"
+export ANDROID_BUILD_CACHE_PATH="$HOME/.android/cache"
+export ANDROID_GRADLE_CACHE_PATH="$HOME/.gradle"
 
 unalias clear-mem 2>/dev/null
 clear-mem() {
@@ -163,7 +164,10 @@ clear-mem() {
     "$ANDROID_GRADLE_CACHE_PATH"
   )
   for d in "${dirs[@]}"; do
-    /bin/rm -rf "$d"/*(N) 2>/dev/null || true
+    if [ -d "$d" ]; then
+      # Remove only the contents of the directory, keep the directory itself
+      find "$d" -mindepth 1 -maxdepth 1 -exec /bin/rm -rf -- {} + 2>/dev/null || true
+    fi
   done
 }
 
@@ -172,43 +176,40 @@ clear-mem() {
 # -----------------------------------------------------------------------------
 
 # Flutter
-alias ft-study="cd /Users/hongtuanquyen/Desktop/WORKSPACE/QUYEN/0_FLUTTER/Flutter-Study-App"
-alias ft-base="cd /Users/hongtuanquyen/Desktop/WORKSPACE/QUYEN/0_FLUTTER/base-flutter"
+alias ft-study="cd $HOME/Desktop/WORKSPACE/QUYEN/0_FLUTTER/Flutter-Study-App"
+alias ft-base="cd $HOME/Desktop/WORKSPACE/QUYEN/0_FLUTTER/base-flutter"
 
 # React Native base
-alias rn-base="cd /Users/hongtuanquyen/Desktop/WORKSPACE/QUYEN/0_REACT_NATIVE/base-react-native/"
-alias expo-base="cd /Users/hongtuanquyen/Desktop/WORKSPACE/QUYEN/0_REACT_NATIVE/base-expo/0_source-base-expo"
-
-# GMO CDI
-alias rn-tap="cd /Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/CDI/taprica-app/0_source-taprica-app/remoconApp"
-alias node-tap="cd /Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/CDI/taprica-server/0_source-taprica-server/remoconServer"
-alias rn-cpap="cd /Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/CDI/cpap/0_source_cpap"
+alias rn-base="cd $HOME/Desktop/WORKSPACE/QUYEN/0_REACT_NATIVE/base-react-native/"
+alias expo-base="cd $HOME/Desktop/WORKSPACE/QUYEN/0_REACT_NATIVE/base-expo/0_source-base-expo"
 
 # Frameworks
-alias next-base="cd /Users/hongtuanquyen/Desktop/WORKSPACE/QUYEN/0_NEXTJS/next-base"
-alias nest-base="cd /Users/hongtuanquyen/Desktop/WORKSPACE/QUYEN/0_NESTJS/nest-base"
-alias node-base="cd /Users/hongtuanquyen/Desktop/WORKSPACE/QUYEN/0_NODEJS/node-base"
+alias next-base="cd $HOME/Desktop/WORKSPACE/QUYEN/0_NEXTJS/next-base"
+alias nest-base="cd $HOME/Desktop/WORKSPACE/QUYEN/0_NESTJS/nest-base"
+alias node-base="cd $HOME/Desktop/WORKSPACE/QUYEN/0_NODEJS/node-base"
 
-# GMO projects
-alias rn-shinhan="cd /Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/shinhan/0_src_shinhan"
-alias rn-fp="cd /Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/fintech/0_source_fintech"
+########## GMO projects ##########
+alias rn-shinhan="cd $HOME/Desktop/WORKSPACE/GMO/DEV/shinhan/0_src_shinhan"
+alias rn-fp="cd $HOME/Desktop/WORKSPACE/GMO/DEV/fintech/0_src_fintech"
 
 # Tenbin
-alias metis-localenv="cd /Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/METIS/0_src_local-env-metis"
-alias metis-client="cd /Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/METIS/0_src_metis-client"
-alias metis-server="cd /Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/METIS/0_src_metis-server"
-alias metis-admin-client="cd /Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/METIS/0_src_metis-admin-client"
+alias metis-localenv="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/METIS/0_src_local-env-metis"
+alias metis-client="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/METIS/0_src_metis-client"
+alias metis-server="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/METIS/0_src_metis-server"
+alias metis-admin-client="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/METIS/0_src_metis-admin-client"
 
-alias sophia-localenv="cd /Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/SOPHIA/0_src_local-env-sophia"
-alias sophia-client="cd /Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/SOPHIA/0_src_sophia-client"
-alias sophia-server="cd /Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/SOPHIA/0_src_sophia-server"
-alias sophia-admin-client="cd /Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/SOPHIA/0_src_sophia-admin-client"
+alias sophia-localenv="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/SOPHIA/0_src_local-env-sophia"
+alias sophia-client="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/SOPHIA/0_src_sophia-client"
+alias sophia-server="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/SOPHIA/0_src_sophia-server"
+alias sophia-admin-client="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/SOPHIA/0_src_sophia-admin-client"
 
-alias tenbin-common="cd /Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/0_src-common"
-alias tenbin-lambda="cd /Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/0_src_lambda"
+alias tenbin-common="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/0_src_common"
+alias tenbin-lambda="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/0_src_lambda"
 
-alias bff-localenv="cd /Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/BFF/0_src_local-env-bff"
-alias bff-server="cd /Users/hongtuanquyen/Desktop/WORKSPACE/GMO/DEV/tenbin/BFF/0_src-bff"
+alias bff-localenv="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/BFF/0_src_local-env-bff"
+alias bff-server="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/BFF/0_src_bff"
 
-# Xcode
-alias xcode-clean="rm -rf /Users/hongtuanquyen/Library/Developer/Xcode/DerivedData"
+# CDI
+alias rn-tap="cd $HOME/Desktop/WORKSPACE/GMO/DEV/CDI/taprica-app/0_src_taprica-app/remoconApp"
+alias node-tap="cd $HOME/Desktop/WORKSPACE/GMO/DEV/CDI/taprica-server/0_src_taprica-server/remoconServer"
+alias rn-cpap="cd $HOME/Desktop/WORKSPACE/GMO/DEV/CDI/cpap/0_src_cpap"
