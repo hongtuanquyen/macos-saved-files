@@ -158,5 +158,13 @@ safe_remove "$HOME/.gradle" "Gradle directory"
 clear_contents "$HOME/.npm/_cacache" "NPM cache"
 clear_contents "$HOME/.nvm/.cache" "NVM cache"
 
+print_header "12. Cleaning Docker Builder Cache"
+if command -v docker >/dev/null 2>&1; then
+    echo -e "${GREEN}✓${NC} Running Docker builder prune"
+    docker builder prune -a -f
+else
+    echo -e "${YELLOW}⊘${NC} Docker not installed or not available in PATH"
+fi
+
 print_header "Cleanup Completed Successfully!"
 echo -e "${GREEN}All cleanup operations have been completed.${NC}\n"
