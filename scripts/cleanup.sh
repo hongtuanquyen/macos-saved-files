@@ -100,12 +100,29 @@ clear_contents "$ANDROID_SDK_DIR/ndk" "Android ndk"
 clear_contents "$ANDROID_SDK_DIR/platforms" "Android platforms"
 
 print_header "4. Cleaning Downloads (keeping /save)"
+echo -e "${GREEN}DOWNLOAD_DIR:${NC} $DOWNLOAD_DIR"
 # Remove all files and folders except the "save" folder
 if [ -d "$DOWNLOAD_DIR" ]; then
-    find "$DOWNLOAD_DIR" -mindepth 1 -maxdepth 1 ! -name "save" -exec rm -rf {} + 2>/dev/null || true
-    echo -e "${GREEN}✓${NC} Cleaned Downloads directory (kept /save folder)"
+    removed=0
+    failed=0
+    for entry in "$DOWNLOAD_DIR"/* "$DOWNLOAD_DIR"/.[!.]* "$DOWNLOAD_DIR"/..?*; do
+        [ -e "$entry" ] || continue
+        [ "$(basename "$entry")" = "save" ] && continue
+        if rm -rf "$entry"; then
+            echo -e "${GREEN}✓${NC} Removed: $(basename "$entry")"
+            removed=$((removed + 1))
+        else
+            echo -e "${RED}✗${NC} Failed to remove: $(basename "$entry")"
+            failed=$((failed + 1))
+        fi
+    done
+    if [ "$failed" -eq 0 ]; then
+        echo -e "${GREEN}✓${NC} Cleaned Downloads directory (kept /save folder, removed $removed item(s))"
+    else
+        echo -e "${YELLOW}⚠${NC} Downloads cleanup finished with $failed failure(s) ($removed removed)"
+    fi
 else
-    echo -e "${YELLOW}⊘${NC} Downloads directory not found"
+    echo -e "${YELLOW}⊘${NC} Downloads directory not found ($DOWNLOAD_DIR)"
 fi
 
 print_header "5. Cleaning Build Files"
