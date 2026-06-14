@@ -193,12 +193,12 @@ alias rn-shinhan="cd $HOME/Desktop/WORKSPACE/GMO/DEV/shinhan/0_src_shinhan"
 alias rn-fp="cd $HOME/Desktop/WORKSPACE/GMO/DEV/fintech/0_src_fintech"
 
 # Tenbin
-alias metis-localenv="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/METIS/0_src_local-env-metis"
+alias tenbin-localenv="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/0_src_local-env"
+
 alias metis-client="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/METIS/0_src_metis-client"
 alias metis-server="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/METIS/0_src_metis-server"
 alias metis-admin-client="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/METIS/0_src_metis-admin-client"
 
-alias sophia-localenv="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/SOPHIA/0_src_local-env-sophia"
 alias sophia-client="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/SOPHIA/0_src_sophia-client"
 alias sophia-server="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/SOPHIA/0_src_sophia-server"
 alias sophia-admin-client="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/SOPHIA/0_src_sophia-admin-client"
@@ -206,7 +206,6 @@ alias sophia-admin-client="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/SOPHIA/0_sr
 alias tenbin-common="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/0_src_common"
 alias tenbin-lambda="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/0_src_lambda"
 
-alias bff-localenv="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/BFF/0_src_local-env-bff"
 alias bff-server="cd $HOME/Desktop/WORKSPACE/GMO/DEV/tenbin/BFF/0_src_bff"
 
 # CDI
